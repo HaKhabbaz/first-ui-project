@@ -1,0 +1,384 @@
+/* (990px , 1200px) -> lg (Large) */
+@media (min-width: 990px) and (max-width: 1200px) {
+    * {
+        margin: 0;
+        padding: 0;
+        direction: rtl;
+    }
+
+    .wrapper {
+        width: 100%;
+    }
+
+    /*------------------------------ menu ------------------------------*/
+
+    section.menu {
+        width: 100%;
+        height: 50px;
+        background-color: lightgray;
+    }
+
+    section.menu > nav {
+        width: inherit;
+        height: inherit;
+    }
+
+    section.menu > nav > ul {
+        width: inherit;
+        height: inherit;
+        list-style: none;
+        padding-right: 10px;
+        box-sizing: border-box;
+    }
+
+    section.menu > nav > ul > li {
+        display: inline-block;
+        width: auto;
+        height: 100%;
+        padding: 0 10px;
+        box-sizing: border-box;
+        transition: all 0.3s linear;
+    }
+
+    section.menu > nav > ul > li > a{
+        display: block;
+        width: 100%;
+        line-height: 50px;
+        height: 100%;
+        text-decoration: none;
+        font-size: 15px;
+        font-family: "IranSans";
+        color: #132843;
+        transition: all 0.3s ease;
+    }
+
+    section.menu > nav > ul > li:hover {
+        background-color: #132843;
+    }
+
+    section.menu > nav > ul > li:hover > a {
+        color: whitesmoke;
+    }
+
+    /*------------------------------ parallax ------------------------------*/
+
+    section.parallax {
+        width: 100%;
+        height: 550px;
+        background: url("../../img/windows 12 4K.jpg") center center no-repeat fixed;
+        background-size: cover;
+        padding: 30px;
+        box-sizing: border-box;
+    }
+
+    section.parallax > section.slogan {
+        width: 500px;
+        height: 250px;
+        padding: 30px;
+        box-sizing: border-box;
+        position: relative;
+        right: 50%;
+        left: 50%;
+        transform: translate(50% , 50%);
+        background-color: rgba(255,255,255,0.2);
+        border-radius: 8px;
+        box-shadow: -5px 5px 10px whitesmoke;
+    }
+
+    section.parallax > section.slogan > h1{
+        text-align: center;
+        font-family: "IranSans";
+        margin-bottom: 5px;
+        color: #fff;
+        font-size: 20px;
+        text-shadow: 0 -2px 5px #132843 ;
+    }
+
+    section.parallax > section.slogan > p{
+        text-align: justify;
+        font-family: "IranSans";
+        margin-bottom: 5px;
+        color: #fffd00;
+        font-size: 15px;
+        text-shadow: 0 -2px 5px #132843 ;
+    }
+
+    /*------------------------------ news ------------------------------*/
+
+    section.news {
+        width:  100%;
+        padding: 48px;
+        box-sizing: border-box;
+        background-color: lightgray;
+    }
+
+    section.news > h1{
+        text-align: center;
+        width: 50%;
+        padding-bottom: 20px;
+        box-sizing: border-box;
+        margin: 0 auto 20px;
+        font-family: "IranSans";
+        font-size: 25px;
+        border-bottom: 2px inset #132843;
+    }
+
+    section.news > section.news-item{
+        width: 30%;
+        min-height: 500px;
+        display: inline-block;
+        background-color: #b9b9b9;
+        border-radius: 8px;
+        padding: 10px;
+        margin-right: 20px;
+        box-sizing: border-box;
+    }
+
+    section.news > section.news-item > section.news-image{
+        width: 100%;
+        border-radius: 8px;
+        height: auto;
+        overflow: hidden;
+        margin-bottom: 15px ;
+    }
+
+    section.news > section.news-item > section.news-image > img {
+        width: 100%;
+        height: auto;
+    }
+
+    section.news > section.news-item > section.news-content {
+        width: 100%;
+        padding-right: 5px;
+        box-sizing: border-box;
+    }
+
+    section.news > section.news-item > section.news-content > h1 {
+        font-size: 20px;
+        font-weight: 600;
+        font-family: "IranSans";
+        color: darkblue;
+    }
+
+    section.news > section.news-item > section.news-content > p {
+        font-size: 15px;
+        font-family: "IranSans";
+        color: #132843;
+        text-align: justify;
+        margin-bottom: 5px;
+    }
+
+    section.news > section.news-item > section.news-content > a{
+        position: relative;
+        height: 35px;
+        border-radius: 10px;
+        background-color: #132843;
+        color: whitesmoke;
+        text-decoration: none;
+        font-size: 13px;
+        float: left;
+        font-family: "IranSans";
+        padding: 8px 15px;
+        display: inline-block;
+        box-sizing: border-box;
+        transition: all 0.3s ease-in;
+        overflow: hidden;
+        z-index: 1;
+    }
+
+    section.news > section.news-item > section.news-content > a:before{
+        content: "";
+        display: inline-block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: whitesmoke;
+        transform: scale(0,0);
+        transform-origin: center center;
+        left: 0;
+        top: 0;
+        transition: all 0.3s ease-in;
+        z-index: 1;
+    }
+
+    section.news > section.news-item > section.news-content > a:hover:before{
+        transform: scale(2,2);
+        z-index: -1;
+    }
+
+    section.news > section.news-item > section.news-content > a:hover{
+        color: #132843;
+        box-shadow: 0 0 10px #132843;
+        font-weight: 600;
+        z-index:2;
+    }
+
+    /*------------------------------ about-us ------------------------------*/
+
+    section.about-us{
+        width: 100%;
+        padding: 50px;
+        box-sizing: border-box;
+        background: url("../../img/windows 12 4K.jpg") center center no-repeat fixed;
+        background-size: cover;
+    }
+
+    section.about-us > section.about-content{
+        width: 80%;
+        margin: 0 auto;
+        background-color: rgba(255,255,255,0.9);
+        box-sizing: border-box;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: -10px 10px 15px #132843, inset -2px 2px 15px #132843;
+    }
+
+    section.about-us > section.about-content > h1{
+        text-align: center;
+        font-family: "IranSans";
+        color: #132843;
+        font-size: 20px;
+        padding-bottom: 5px;
+        box-sizing: border-box;
+        margin: 0 auto 12px;
+        width: 50%;
+        border-bottom: 2px dashed #132843;
+    }
+
+    section.about-us > section.about-content > p{
+        text-align: justify;
+        color: #132843;
+        font-family: "IranSans";
+        font-size: 15px;
+    }
+
+    /*------------------------------ gallery ------------------------------*/
+
+    section.gallery {
+        width: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    section.gallery > section.gallery-item {
+        width: calc(30% - 10px);
+        display: inline-block;
+        overflow: hidden;
+        height: auto;
+        margin-right: 5px;
+        position: relative;
+    }
+
+    section.gallery > section.gallery-item > section:nth-child(1) {
+        width: 100%;
+        height: auto;
+    }
+
+    section.gallery > section.gallery-item > section:nth-child(1) > img {
+        width: 100%;
+        height: 200px;
+    }
+
+    section.gallery > section.gallery-item > section:nth-child(2) {
+        width: 100%;
+        height: 300px;
+        padding: 10px;
+        box-sizing: border-box;
+        background-color: rgba(50,100,255,0.1);
+        position: absolute;
+        top: 0;
+        right: -100%;
+        transition: all 0.3s ease-out;
+    }
+
+    section.gallery > section.gallery-item > section:nth-child(2) > p {
+        width: 100%;
+        color: #fff;
+        font-size: 14px;
+        font-family: "IranSans";
+        font-weight: 500;
+        text-align: justify;
+    }
+
+    section.gallery > section.gallery-item:hover > section:nth-child(2){
+        right: 0;
+    }
+
+    /*------------------------------ contact-us ------------------------------*/
+
+    section.contact-us{
+        width: 80%;
+        margin: 0 auto;
+        background-color: rgba(255, 255, 255, 0.9);
+        box-sizing: border-box;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: -10px 10px 15px #132843, inset -2px 2px 15px #132843;
+
+    }
+
+    section.contact-us > h1 {
+        width: 50%;
+        padding-bottom: 10px;
+        box-sizing: border-box;
+        font-family: "IranSans";
+        font-size: 20px;
+        color: #132843;
+        border-bottom: 2px dashed #132843;
+        margin: 0 auto 10px;
+        text-align: center;
+    }
+
+    section.contact-us > form{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    section.contact-us > form > .contact-input{
+        outline: none;
+        width: calc(50% - 22px);
+        height: 50px;
+        border: none;
+        border-bottom: 2px solid #132843;
+        margin-top: 20px;
+        margin-left: 20px;
+        padding: 5px 10px;
+        box-sizing: border-box;
+        color: #132843;
+        font-family: "IranSans";
+        font-weight: 600;
+    }
+
+    section.contact-us > form > textarea.contact-input{
+        width: 100%;
+        resize: none;
+        height: 150px;
+        margin-top: 20px;
+    }
+
+    section.contact-us > form > .contact-input::placeholder{
+        color: #132843;
+        filter: opacity(0.7);
+    }
+
+    section.contact-us > form > input[type=submit]{
+        width: 30%;
+        height: 50px;
+        color: whitesmoke;
+        border-radius: 10px;
+        outline: none;
+        border: none;
+        background-color: #132843;
+        font-family: "IranSans";
+        font-size: 18px;
+        margin-top: 20px;
+        transition: all 0.3s ease-in;
+    }
+
+    section.contact-us > form > input[type=submit]:hover {
+        color: #132843;
+        background-color: whitesmoke;
+        box-shadow: 0 0 10px #132843 , inset 0 0 10px #132843;
+        font-weight: 600;
+    }
+}
